@@ -1,0 +1,192 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap";
+ :root {
+    --color-green: #00ff40;
+    --color-locksmith: #ebee26;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: yellow;
+    transition: color 700ms;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper img {
+    border-radius: 50%;
+    border: 5px solid #00ff40;
+    margin-bottom: 32px;
+    height: 150px;
+}
+
+.wrapper h1 {
+    font-size: 42px;
+    line-height: 20px;
+}
+
+.wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.wrapper h2 a {
+    color: var(--color-green);
+}
+
+.wrapper h2 a:hover {
+    color: yellow;
+    transition: 1500ms;
+}
+
+.wrapper p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+#links-footer a {
+    border-bottom: var(--color-green);
+    border-bottom: 3px solid var(--color-green);
+}
+
+
+/*=== CARDS ===*/
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(207, 207, 11);
+}
+
+.card_image-container img {
+    width: 100%;
+    margin-right: 500px;
+}
+
+.card_content,
+.card_info {
+    padding: 24px;
+    color: black;
+}
+
+.card_info {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+}
+
+.card_info p {
+    background-color: rgb(19, 16, 16);
+    color: rgb(0, 81, 255);
+    filter: brightness(70%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer
+}
+
+.card_info p:hover {
+    color: rgb(234, 238, 1);
+    transition: 800ms;
+}
+
+.card_price {
+    color: rgb(234, 238, 1);
+    filter: brightness(80%);
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.card_useless {
+    margin-left: 10px;
+}
+
+
+/* === Modal === */
+
+.modal-overlay {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+/* === Modal.active === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
