@@ -1,2 +1,1 @@
-# Bootcamp-Rocketseat - Módulo 2
-Primeiro site feito, aplicando conhecimentos básicos de front end.
+# :construction_worker: 1° Projeto contendo HTML, CSS e Javascript
